@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body onload="js:genwallet(null)">
+  <div class="wallet">
+    <img src="keys.png"/>
+    <div class="amount-added-text">Seed</div>
+        <div class="note-text" id="mnemonic_widget">Seed</div>
+    <div class="date-text">Date</div>
+    <div class="instruction-text">
+      <ul>
+        <li>
+          To deposit funds to this Mask paper wallet: send MASK to the <b>public</b> address
+        </li>
+        <li>
+          <b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance of this wallet to a Mask client 
+        </li>
+      </ul>
+    </div>
+    <div id="spend_key_widget" class="spend_key_widget"></div>
+    <div id="address_widget" class="address_widget"></div>
+    <div id="qrcodeSecret" class="qr-secret"></div>
+    <div id="address_qr_widget" class="qr-address"></div>
+    <div id="view_key_widget" class="view_key_widget"></div>
+    <div id="qrcodeView" class="qr-view"></div>
+    <div class="logo-text">
+      <ul>
+        <div class="logo">
+          <img class="logo" src="logo.png"/>
+        </div>
+        <li>
+          <b>MASK</b>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="buttons">
+    <button type="button" onclick="js:genwallet(null)">Generate new</button>
+    <button type="button" onClick="window.print()">Print</button>
+  
+  </div>
+  <div class="instruction">
+    <img src="instructions.png"/>
+  </div>
+    <script src="wallet.js"></script>
+      <script src="crypto_utils.js"></script>
+  <script src="qrcode.js"></script>
+</body>
+</html>
