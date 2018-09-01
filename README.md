@@ -1,1 +1,1 @@
-# mask-wallet
+# mask-paper-wallet

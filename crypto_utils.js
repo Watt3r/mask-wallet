@@ -1628,7 +1628,7 @@ var config = {
     coinSymbol: 'MASK',
     coinName: 'Mask',
     coinUriPrefix: 'maskcoin:',
-    addressPrefix: 291
+    addressPrefix: 123
 };
 var cnUtil = (function(initConfig) {
     //var config = $.extend({}, initConfig);
